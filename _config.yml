@@ -16,7 +16,7 @@
 
 ## => Site Settings
 ##############################
-text_skin: chocolate # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
@@ -24,6 +24,20 @@ title   : tao-note
 theme: jekyll-text-theme
 description: > # this means to ignore newlines until "Language & timezone"
   tao-note.
+
+
+layout: articl
+header:
+  theme: dark
+  background: 'linear-gradient(135deg, rgb(34, 139, 87), rgb(139, 34, 139))'
+article_header:
+  type: overlay
+  theme: dark
+  background_color: '#203028'
+  background_image:
+    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+    src: /docs/assets/images/1.jpg
+
 
 
 ## => Language and Timezone
@@ -226,15 +240,3 @@ plugins:
   - jemoji
 
 
-layout: article
-title: Page - Article Header Overlay Background Image (Customized Header Background)
-header:
-  theme: dark
-  background: 'linear-gradient(135deg, rgb(34, 139, 87), rgb(139, 34, 139))'
-article_header:
-  type: overlay
-  theme: dark
-  background_color: '#203028'
-  background_image:
-    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
-    src: /docs/assets/images/cover3.jpg
